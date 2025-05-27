@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ffffff url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 1.6;
+  font-size: 16px;
+}
+#mainHeader {
+  font-size: 2rem;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 1rem;
+}
+.eventCard {
+  background-color: white;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+.cta-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+.section-header {
+  background: linear-gradient(to right, #4CAF50, #81C784);
+  color: white;
+  padding: 10px;
+}
+.event-description {
+  font-style: italic;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  text-align: justify;
+}
+a:link {
+  color: #007BFF;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+nav ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+nav li {
+  margin: 5px;
+  padding: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+input:focus {
+  outline: 2px solid #007BFF;
+}
+.hidden {
+  visibility: hidden;
+}
+.none {
+  display: none;
+}
+.news p {
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid gray;
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  body {
+    font-size: 14px;
+  }
+  .eventCard {
+    margin: 10px;
+    padding: 15px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .container {
+    width: 90vw;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
